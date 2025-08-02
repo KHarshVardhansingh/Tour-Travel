@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #b6003a;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  align-items: center;
+  background: #ffffff;
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-content h2 {
+  color: #b62700;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  margin-bottom: 10px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #e8f4f8;
+}
+
+.mission, .vision {
+  flex: 1;
+  padding: 20px;
+}
+
+.mission h3, .vision h3 {
+  color: #b62a00;
+  margin-bottom: 10px;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.team-section h2 {
+  color: #b65b00;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #f4f6f9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #b60021;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section, .mission-vision {
+    flex-direction: column;
+    text-align: center;
+  }
+}

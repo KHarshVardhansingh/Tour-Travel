@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #b60021;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+    margin-top: 30px;
+}
+
+.viewport {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+}
+
+.snapper {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Packages Section */
+.packages-section {
+  text-align: center;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.packages-section h2 {
+  color: #b63100;
+  margin-bottom: 10px;
+}
+
+.packages-section p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.package-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.package-card {
+  background: #f4f6f9;
+  width: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.package-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.package-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.package-info h3 {
+  color: #b62a00;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #e63946;
+  margin: 5px 0;
+}
+
+.book-btn {
+  background: #b60009;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #860016;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #b6002e;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .package-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
